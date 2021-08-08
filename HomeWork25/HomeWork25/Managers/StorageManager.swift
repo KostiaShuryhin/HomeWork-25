@@ -8,7 +8,7 @@
 import Foundation
 import RealmSwift
 
-
+// что бы из любого места обратиться к реалму
 let realm = try! Realm()
 
 class StorageManager {
@@ -18,4 +18,11 @@ class StorageManager {
             realm.deleteAll()
         }
     }
+    
+    static func saveTasksList( taskList: TasksList) {
+        try! realm.write {
+            realm.add(taskList)
+        }
+    }
+    
 }
