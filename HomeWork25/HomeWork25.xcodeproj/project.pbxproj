@@ -14,6 +14,8 @@
 		B585EDAB26BFEF4C0091EB0B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B585EDAA26BFEF4C0091EB0B /* RealmSwift */; };
 		B585EDAE26C00D490091EB0B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDAD26C00D490091EB0B /* Task.swift */; };
 		B585EDB026C00D5B0091EB0B /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDAF26C00D5B0091EB0B /* TaskList.swift */; };
+		B585EDB226C0104B0091EB0B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDB126C0104B0091EB0B /* StorageManager.swift */; };
+		B585EDB426C012D70091EB0B /* RealmToDoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B585EDB326C012D70091EB0B /* RealmToDoList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		B585ED9E26BFEB3F0091EB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B585EDAD26C00D490091EB0B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		B585EDAF26C00D5B0091EB0B /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		B585EDB126C0104B0091EB0B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B585EDB326C012D70091EB0B /* RealmToDoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealmToDoList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				B585ED9B26BFEB3F0091EB0B /* LaunchScreen.storyboard */,
+				B585EDB326C012D70091EB0B /* RealmToDoList.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 		B585EDAC26C004D80091EB0B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				B585EDB126C0104B0091EB0B /* StorageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -183,6 +189,7 @@
 			files = (
 				B585ED9D26BFEB3F0091EB0B /* LaunchScreen.storyboard in Resources */,
 				B585ED9A26BFEB3F0091EB0B /* Assets.xcassets in Resources */,
+				B585EDB426C012D70091EB0B /* RealmToDoList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +202,7 @@
 			files = (
 				B585EDB026C00D5B0091EB0B /* TaskList.swift in Sources */,
 				B585ED9126BFEB3A0091EB0B /* AppDelegate.swift in Sources */,
+				B585EDB226C0104B0091EB0B /* StorageManager.swift in Sources */,
 				B585EDAE26C00D490091EB0B /* Task.swift in Sources */,
 				B585ED9326BFEB3A0091EB0B /* SceneDelegate.swift in Sources */,
 			);
