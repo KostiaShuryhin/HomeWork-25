@@ -41,6 +41,11 @@ class TasksListCV: UITableViewController {
         alertForAddAndUpdateList()
     }
     @IBAction func sortingList(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            tasksLists = tasksLists.sorted(byKeyPath: "name")
+        } else {
+            tasksLists = tasksLists.sorted(byKeyPath: "data")
+        }
     }
 
 
@@ -60,6 +65,25 @@ class TasksListCV: UITableViewController {
         return cell
     }
 
+    // добавление editing с обработкой свайпа длинного
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteContextItem = UIContextualAction(style: .destructive, title: "Delete") {_,_,_ in
+            
+        }
+        let editContextItem = UIContextualAction(style: .destructive, title: "Edit") {_,_,_ in
+            
+        }
+        let doneContextItem = UIContextualAction(style: .destructive, title: "Done") {_,_,_ in
+            
+        }
+        
+        editContextItem.backgroundColor = .orange
+        doneContextItem.backgroundColor = .green
+        
+        let swipeActions = UISwipeActionsConfiguration(actions: [deleteContextItem, editContextItem, doneContextItem])
+        
+        return swipeActions
+    }
 
     /*
     // Override to support conditional editing of the table view.
