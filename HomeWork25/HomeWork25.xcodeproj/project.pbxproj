@@ -14,6 +14,11 @@
 		B585EDAB26BFEF4C0091EB0B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B585EDAA26BFEF4C0091EB0B /* RealmSwift */; };
 		B585EDAE26C00D490091EB0B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDAD26C00D490091EB0B /* Task.swift */; };
 		B585EDB026C00D5B0091EB0B /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDAF26C00D5B0091EB0B /* TaskList.swift */; };
+		B585EDB226C0104B0091EB0B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDB126C0104B0091EB0B /* StorageManager.swift */; };
+		B585EDB426C012D70091EB0B /* RealmToDoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B585EDB326C012D70091EB0B /* RealmToDoList.storyboard */; };
+		B585EDB626C0156F0091EB0B /* TasksListCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDB526C0156F0091EB0B /* TasksListCV.swift */; };
+		B585EDB826C015BA0091EB0B /* TasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDB726C015BA0091EB0B /* TasksVC.swift */; };
+		B585EDBB26C03A4B0091EB0B /* UITableViewCellExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585EDBA26C03A4B0091EB0B /* UITableViewCellExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +30,11 @@
 		B585ED9E26BFEB3F0091EB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B585EDAD26C00D490091EB0B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		B585EDAF26C00D5B0091EB0B /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		B585EDB126C0104B0091EB0B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B585EDB326C012D70091EB0B /* RealmToDoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealmToDoList.storyboard; sourceTree = "<group>"; };
+		B585EDB526C0156F0091EB0B /* TasksListCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksListCV.swift; sourceTree = "<group>"; };
+		B585EDB726C015BA0091EB0B /* TasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
+		B585EDBA26C03A4B0091EB0B /* UITableViewCellExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 		B585ED8F26BFEB3A0091EB0B /* HomeWork25 */ = {
 			isa = PBXGroup;
 			children = (
+				B585EDB926C039B70091EB0B /* Extensions */,
 				B585EDA726BFEB820091EB0B /* Resourses */,
 				B585EDA626BFEB710091EB0B /* AppDelegate */,
 				B585ED8E26BFEB3A0091EB0B /* Products */,
@@ -73,6 +84,8 @@
 		B585EDA426BFEB480091EB0B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B585EDB526C0156F0091EB0B /* TasksListCV.swift */,
+				B585EDB726C015BA0091EB0B /* TasksVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -81,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B585ED9B26BFEB3F0091EB0B /* LaunchScreen.storyboard */,
+				B585EDB326C012D70091EB0B /* RealmToDoList.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,8 +128,17 @@
 		B585EDAC26C004D80091EB0B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				B585EDB126C0104B0091EB0B /* StorageManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		B585EDB926C039B70091EB0B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B585EDBA26C03A4B0091EB0B /* UITableViewCellExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +206,7 @@
 			files = (
 				B585ED9D26BFEB3F0091EB0B /* LaunchScreen.storyboard in Resources */,
 				B585ED9A26BFEB3F0091EB0B /* Assets.xcassets in Resources */,
+				B585EDB426C012D70091EB0B /* RealmToDoList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +219,12 @@
 			files = (
 				B585EDB026C00D5B0091EB0B /* TaskList.swift in Sources */,
 				B585ED9126BFEB3A0091EB0B /* AppDelegate.swift in Sources */,
+				B585EDB226C0104B0091EB0B /* StorageManager.swift in Sources */,
 				B585EDAE26C00D490091EB0B /* Task.swift in Sources */,
+				B585EDB826C015BA0091EB0B /* TasksVC.swift in Sources */,
+				B585EDBB26C03A4B0091EB0B /* UITableViewCellExt.swift in Sources */,
 				B585ED9326BFEB3A0091EB0B /* SceneDelegate.swift in Sources */,
+				B585EDB626C0156F0091EB0B /* TasksListCV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
